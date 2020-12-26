@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Any Price</title>
+      <link rel="stylesheet" href="{% static 'home/main.css' %}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <a href="https://pixabay.com/pt/illustrations/intelig%C3%AAncia-artificial-c%C3%A9rebro-3685928/"> <img style="max-width:25rem;" src="{% static 'logo/ia.png' %}"></a>
+               <h1>Get any price with this open source tool using machine learn</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="/">Início</a></li>  
+                  <li><a href="https://google.com/">github</a></li>                
+               </ul>
+            </nav>
+         </div>             
+      </div>          
+      <div class="contentInPage">
+         <div class="contact-form">
+            <h1>Test this tool</h1>
+            <section class="contact-section">
+               <form method = 'post' style="margin-left: 4rem;">
+                  {% csrf_token %}
+                  <div class="form-group">
+                     <label for="name">Url</label>
+                     <input type="text" class="form-control" id="fullname" name="nome" for="nome" aria-describedby="Username" placeholder="Exemplo:  https://www.sitedecompra.domínio/id='123'">       
+                     <p> Price: </p>{{ result }}
+                  </div>                 
+                  <button type="submit" class="btn btn-primary" style="margin-top: 5rem;margin-bottom: 2rem;">Send</button>
+                  <p>This tool was created specified for the brazilian money(REAL - R$). I would love if you want to help in the development of this tool acessing: <a href="https://www.github.com/uriielfl">www.github.com/uriielfl</a>.</p>
+               </form>
+            </section>
+         </div>
+      </div>      
+   </body>
+</html>

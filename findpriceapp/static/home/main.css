@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Dosis:wght@400;500&family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	
+}
+
+nav {
+	flex: 1;
+	text-align: right;
+	overflow:hidden;
+}
+
+.logo {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	display: block;
+	color: #000000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+nav ul a {
+	display: inline-block;
+	list-style-type: none;
+	font-family: 'Dosis';
+	font-size: medium;
+	text-decoration: none!important;
+	color: black;
+}
+
+
+nav ul li:hover {
+	transform: scale(1.2);
+}
+
+
+
+nav ul li {
+	padding: 30px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+p {
+	color: #555;
+}
+
+.container {
+	max-width: 100%;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.contentInPage {
+	background-color: rgb(243, 243, 243);
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.form-group{
+	width: 25rem;
+}
+
+.contact-form h1 {
+	font-family: 'Thasadith', sans-serif;
+	padding-left: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+
+.contact-form h1 {
+	font-family: 'Thasadith', sans-serif;
+	padding-left: 4rem;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+
+.contact-section {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 5rem;
+	align-items: center;
+}
+
+.contact-section input {
+	width: 250%;
+}
+
+.contact-section textarea {
+	width: 250%;
+}
+
+.contact-section select {
+	width: 250%;
+}
+
+.product-card {
+	padding: 5rem;
+	flex-grow: 1;
+	flex-basis: 16%;
+	display: inline-block;
+	grid-auto-rows: 50px;
+}
+
+.product-image img {
+	max-width: 100%;
+}
+
+.product-image:hover {
+	transform: scale(1.1);
+}
+
+.product-info h5 {
+	font-family: 'Poiret One';
+	font-size: 20px;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.product-info a {
+	font-family: 'Poiret One';
+	font-size: 20px;
+	padding-bottom: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.product-info h6 {
+	font-family: 'Poiret One';
+	font-size: 16px;
+	text-align: center;
+}
