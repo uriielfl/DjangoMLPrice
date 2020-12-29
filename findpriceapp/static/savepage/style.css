@@ -77,8 +77,8 @@ p {
 	margin-right: auto;
 	display: block;
 }
-.contentInPage{
-	padding: 10rem 4rem 8rem 12rem;
+.form-group{
+	width: 25rem;
 }
 
 .contact-form h1 {

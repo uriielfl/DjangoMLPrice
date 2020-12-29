@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Any Price</title>
+      <link rel="stylesheet" href="{% static 'home/main.css' %}">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="navbar">
+            <div class="logo">
+               <a href="https://pixabay.com/pt/illustrations/intelig%C3%AAncia-artificial-c%C3%A9rebro-3685928/"> <img style="max-width:25rem;" src="{% static 'logo/ia.png' %}"></a>
+               <h1>Get any price with this open source tool using machine learn</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="/">Início</a></li>  
+                  <li><a href="https://google.com/">github</a></li>                
+               </ul>
+            </nav>
+         </div>             
+      </div>          
+      <div class="contentInPage">
+         
+            <h1>Welcome</h1>
+            <section class="contact-section">
+               
+                  {% csrf_token %}
+                  <div class="form-group">
+                     <h5>What is this tool?</h3>
+                      
+                        
+                        <p>
+                        Basically is a tool that uses Machine Learning to you get the current price of some product that you wish, and them you say to this tool how much you can pay for this product, than this tool will save the URL of the store, the current price, the price you’re able to pay into our database.
+                        You will able to save a lot of pages and prices, and instead you visit every page of each product you want to buy, you just check if the product has that price that you have stipulated before, if today is cheaper than the value you’ve told to this tool, he’ll tell you.
+                        
+                       this tool is FREE and it’s just made to help you. Please, don’t use it wrong, don’t get addicted or the all the work was made just for nothing!
+                       </p>
+                  </div>                 
+                 
+            </section>
+        
+      </div>      
+   </body>
+</html>

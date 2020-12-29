@@ -5,7 +5,7 @@
    <head>
       <meta charset="UTF-8">
       <title>Any Price</title>
-      <link rel="stylesheet" href="{% static 'home/main.css' %}">
+      <link rel="stylesheet" href="{% static 'savepage/style.css' %}">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
@@ -33,7 +33,10 @@
                   <div class="form-group">
                      <label for="name">Url</label>
                      <input type="text" class="form-control" id="fullname" name="nome" for="nome" aria-describedby="Username" placeholder="Exemplo:  https://www.sitedecompra.domínio/id='123'">       
-                     <p> Price: </p>{{ result }}
+                     <h4> Product Name </h4>
+                     <p> {{ productname }} </p>
+                     <h4> Price: </h4>
+                     <p>{{ result }}</p>
                   </div>                 
                   <button type="submit" class="btn btn-primary" style="margin-top: 5rem;margin-bottom: 2rem;">Send</button>
                   <p>This tool was created specified for the brazilian money(REAL - R$). I would love if you want to help in the development of this tool acessing: <a href="https://www.github.com/uriielfl">www.github.com/uriielfl</a>.</p>

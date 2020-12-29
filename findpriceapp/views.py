@@ -5,10 +5,15 @@ import requests
 from bs4 import BeautifulSoup
 from sklearn import tree
 from sklearn.feature_extraction.text import CountVectorizer
+from lxml.html import fromstring
 
+from lxml.html import parse
+def home(request):
+    return render(request,'home/index.html', {})
 def mlprice(request):
-    nome = ""
+    nome = ''
     result = 'Here goes the price'
+    productname = 'Example: Spiderman Figure Action Marvel #123'
     if request.method == 'POST':
         
         nome = request.POST['nome'] #get the url
@@ -100,9 +105,12 @@ def mlprice(request):
         for z in lastFormatedValues[indexOf2-8:]:  
             whatWeWant = whatWeWant + z
         #our variable recives our value.
-        result = whatWeWant
+        al = re.text
+        productname = al[al.find('<title>') + 7 : al.find('</title>')]
+        print(productname)
+        
         
         
         
     #let's put it on page:
-    return render(request, 'home/main.html', {'nome':nome, 'result':result})
+    return render(request, 'savepage/main.html', {'nome':nome, 'result':result, 'productname':productname})
